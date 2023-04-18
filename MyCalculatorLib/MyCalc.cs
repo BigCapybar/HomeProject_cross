@@ -30,15 +30,9 @@ namespace MyCalculatorLib
         public double Div(double x)
         {
             if (x == 0)
-            {
                 throw new DivideByZeroException();
-            }
-            else
-            {
-                Value /= x;
-                return Value;
-            }
-
+            Value /= x;
+            return Value;
         }
         public double Multi(double x)
         {
