@@ -53,8 +53,8 @@ namespace MyCalculatorLib
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                throw;
+                //Console.WriteLine(ex.Message);
+                throw ex;
             }
         }
         public double SquareCircle(double x)

@@ -11,7 +11,7 @@ namespace PresentationWork
     {
         static void Main(string[] args)
         {
-            MyCalc myCalc = new MyCalc(20);
+            MyCalc myCalc = new MyCalc(-20);
             Console.WriteLine(myCalc.Sqrt(4));
             Console.WriteLine(myCalc.Div(5));
             Console.WriteLine(myCalc.PerimetrTriagle(5,10,8));

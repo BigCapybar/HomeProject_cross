@@ -61,10 +61,10 @@ namespace MyCalculatorLib.Tests
         public void Sqrt_10_return3_16()
         {
             double x = 10;
-            double expected = Math.Sqrt(x);
+            double expected = Math.Round(Math.Sqrt(x), 4);
 
             MyCalc myCalc = new MyCalc(x);
-            double actual = myCalc.Sqrt();
+            double actual = myCalc.Sqrt(4);
 
             Assert.AreEqual(expected, actual);
         }
@@ -77,7 +77,7 @@ namespace MyCalculatorLib.Tests
             try
             {
                 MyCalc myCalc = new MyCalc(x);
-                myCalc.Sqrt();
+                myCalc.Sqrt(4);
             }
             catch (Exception ex) { expected = ex; }
 
